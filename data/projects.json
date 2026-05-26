@@ -1,0 +1,9 @@
+{
+  "people": ["Alex", "Sam", "Jamie"],
+  "projects": [
+    "Magic Trick Builder",
+    "AI Assistant",
+    "Game Engine"
+  ],
+  "assignments": {}
+}

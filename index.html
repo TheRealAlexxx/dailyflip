@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Assignments</h1>
+  <div id="list"></div>
+
+  <script>
+    fetch("data/projects.json")
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById("list");
+
+        Object.entries(data.assignments).forEach(([person, project]) => {
+          const div = document.createElement("div");
+          div.textContent = person + " → " + project;
+          list.appendChild(div);
+        });
+      });
+  </script>
+</body>
+</html>
